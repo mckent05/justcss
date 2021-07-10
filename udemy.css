@@ -1,0 +1,563 @@
+body{
+    margin: 0;
+    
+}
+*{
+    scroll-behavior: smooth;
+}
+.main-header{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.main-nav{
+    position:fixed;
+    background-color: white;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    margin: 0px;
+    top: 0;
+    
+    
+}
+.logo{
+    display: inline-block;
+    width: 4%;
+    
+
+}
+.link-container{
+    position: absolute;
+    right: 0;
+    margin-right: 5%;
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    cursor: pointer;
+    
+    
+}
+.links{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5%;
+    text-transform: capitalize;
+    position: relative;
+    margin-top: 25px;
+    
+}
+.menu{
+    position: relative;
+    display: inline-block;
+    margin-right: 5%;
+    width: 120px;
+    
+}
+.menu-list{
+    background-color: white;
+    text-align: left;
+    position: absolute;
+    width: 200px;
+    right: 0;
+    border-top: 2px solid rgb(170,210,54);
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+    
+    
+
+}
+.menu:hover .menu-list{
+    display: block;
+    
+    
+}
+.menu-list h3{
+    border-bottom:  0.5px solid #8b8b99;
+    text-transform: capitalize;
+}
+.menu-list h3:last-of-type{
+    border-bottom: none;
+}
+.nav-btn{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170,210,54);
+    padding: 9px 34px;
+    border-radius: 4px;
+    border: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background-color: transparent;
+    color: rgb(170,210,54) ;
+    border: 1px solid rgb(170,210,54);
+}
+.body-img{
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+.header-text{
+    position: relative;
+    top: 30%;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+}
+.header-text h3{
+    font-family: sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+}
+.header-text p{
+    font-family: serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+
+}
+.sect-1{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    
+    
+}
+.sect-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 3s;
+    
+}
+.step-one{
+    background-color: #5acda6;
+    height: 100%;
+    position: relative;
+    width: 25%;
+    transition: all 1s;
+}
+.step-two{
+    background-color: #91ac41;
+    height: 100%;
+    position: relative;
+    width: 25%;
+    transition: all 1s;
+}
+.step-three{
+    background-color: #e4b476;
+    height: 100%;
+    position: relative;
+    width: 25%;
+    transition: all 1s;
+}
+.step-four{
+    height: 100%;
+    background-color: #f69dad;
+    position: relative;
+    width: 25%;
+    transition: all 1s;
+}
+.step-content{
+    position: relative;
+    width: 70%;
+    margin: 20vh auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.step-content i{
+    transform: scale(5);
+    margin-bottom: 50px;
+    color: white;
+}
+.step-content:hover i{
+    transform: scale(6);
+    transition: all 0.5s;
+}
+.sect-2{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: #f7eee2 ;
+}
+.sect2-container{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.sect2-text{
+    display: inline-block;
+    
+}
+.sect2-text p{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: cursive;
+    position: relative;
+    margin: 0;
+    margin-top: 15vh;
+    text-transform: capitalize;
+    
+}
+.sect2-text h1{
+    font-size: 44px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin-top: 15px;
+    
+}
+.sect2-text h3{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    margin: 0;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.flex-sect{
+    display: flex;
+    position:relative;
+    width: 100%;
+    margin-top:5vh;
+    justify-content: end;
+
+}
+.tired h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.tired p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    width: 70%;
+    word-wrap: break-word;
+    position: relative;
+    margin: 0 auto;
+}
+.tired{
+    position: relative;
+
+}
+.tired i{
+    transform: scale(4);
+   
+    position: relative;
+    display: inline-block;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    color: black;
+    
+    
+}
+.tired:hover i{
+    transform: scale(5);
+    transition: all 1s;
+}
+.sect-3{
+    background-color: white;
+}
+.profile{
+    background-color: #f5f6fb;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    position: relative;
+    width: 30%;
+    margin-bottom: 35px;
+    
+    
+}
+
+.testimony{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-top: 5vh;
+}
+.profile p{
+    position:relative;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    color:#8b8b99;
+    width:80%;
+    margin: 0 auto;
+    margin-top:2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.job{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: #8b8b99;
+    font-style: italic;
+    position: relative;
+    bottom: 2vh;
+    
+
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 35px;
+}
+.profile h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sect5{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+.sect5-container{
+    margin-top: 10vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.berry{
+    margin: 0;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: inline-block;
+
+}
+.social-media{
+    position: absolute;
+    width: 30%;
+    display: inline-block;
+    height: 100%;
+    background-image: url( https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+.media{
+    position: relative;
+    width: 60%;
+    text-align: left;
+    margin: 20vh auto;
+}
+.media h1{
+    position: relative;
+    font-size: 44px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.media p{
+    letter-spacing: 0.5px;
+    color: #8b8b99;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.form{
+    margin-top: 5vh;
+}
+.mail{
+    position: relative;
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.subscribe-btn{
+    background-color: #f69dad;
+    padding: 15px 4px;
+    margin-top: 3vh;
+    position: relative;
+    width:60%;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+.subscribe-btn:hover{
+    background-color: transparent;
+    border: 1px solid #f69dad;
+    color: #f69dad;
+}
+.sect6{
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    
+
+
+}
+.sect6-cont{
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+    
+
+    
+}
+.contact-us{
+    position: relative;
+    display: inline-block;
+    width: 45%;
+    height: 100%;
+    margin-right: 10%;
+    margin-top: 10%;
+    text-align: left;
+}
+.addy-header h3{
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: cursive;
+    color:#91ac41
+}
+.addy-header h1, .meet-team h1{
+    font-weight: 600;
+    font-size: 44px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+.contact-us p, .meet-team h3{
+    font-weight: 500;
+    font-size: 20px;
+    color:#8b8b99;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 0px;
+}
+.stores h1{
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.meet-team{
+    position: absolute;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.meet-team p{
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: cursive;
+    color:#91ac41
+}
+.input{
+    display: inline-block;
+    width: 90%;
+    position:relative;
+    margin-top: 3vh;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid grey;
+}
+.submit-btn{
+    background-color:rgb(170,210,54) ;
+    padding: 10px 2px;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    position: relative;
+    width:30%;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: transparent;
+    color: rgb(170,210,54) ;
+    border: 1px solid rgb(170,210,54);
+}
+
+
+.top-btn{
+    position: absolute;
+    bottom: 3vh;
+    right: 5vh;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color:rgb(170,210,54) ;
+    font-size: 30px;
+    animation: bounce 1s infinite;
+    visibility: hidden;
+    
+}
+.top-btn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(170,210,54);
+    
+}
+.show-btn{
+    visibility: visible;
+}
+.top-btn a{
+    text-decoration: none;
+}
+.top-btn i{
+    color: black;
+}
+.top-btn:hover i{
+    color: rgb(170,210,54);
+}
+
+
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
